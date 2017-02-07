@@ -36,7 +36,7 @@ public class RecursionController
 	{
 		try
 		{
-			int test = Integer.parseInt(current);
+			long test = Long.parseLong(current);
 			if (test >= 0)
 			{
 				return true;
