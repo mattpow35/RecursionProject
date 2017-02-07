@@ -2,7 +2,7 @@ package recursion.model;
 
 public class RecursionTool 
 {
-	public long calculateFactorial(long currentNumber)
+	public double calculateFactorial(double currentNumber)
 	{
 		if (currentNumber == 0 || currentNumber == 1)
 		{
