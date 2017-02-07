@@ -19,7 +19,7 @@ public class RecursionController
 	
 	public void start()
 	{
-		
+		JOptionPane.showMessageDialog(baseFrame, "hello");
 	}
 	
 	public String transferFactorial(String value)

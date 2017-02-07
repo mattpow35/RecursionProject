@@ -22,7 +22,7 @@ public class RecursionFrame extends JFrame
 	public void setupFrame()
 	{
 		this.setContentPane(appPanel);
-		this.setTitle("Recursion");
+		this.setTitle("MATH!");
 		this.setSize(new Dimension(500,500));
 		this.setVisible(true);
 		this.setResizable(false);

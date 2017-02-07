@@ -10,7 +10,7 @@ public class RecursionTool
 		}
 		else
 		{
-			return calculateFactorial((currentNumber - 1) * currentNumber);
+			return calculateFactorial(currentNumber - 1)*currentNumber;
 		}
 	}
 
