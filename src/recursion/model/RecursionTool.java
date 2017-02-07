@@ -2,6 +2,16 @@ package recursion.model;
 
 public class RecursionTool 
 {
+//	public double calculateFactIterative()
+//	{
+//		
+//	}
+//	
+//	public int calculateFibIterative()
+//	{
+//		
+//	}
+	
 	public double calculateFactorial(double currentNumber)
 	{
 		if (currentNumber == 0 || currentNumber == 1)
