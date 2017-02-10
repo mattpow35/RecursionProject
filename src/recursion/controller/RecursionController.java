@@ -32,6 +32,21 @@ public class RecursionController
 		if(isValid(value))
 		{
 			factorialResponse += mathTool.calculateFactorial(Integer.parseInt(value));
+			
+		}
+		mathTimer.stopTimer();
+		factorialResponse += "\n" + mathTimer.toString();
+		mathTimer.resetTimer();
+		return factorialResponse;
+	}
+	
+	public String transferFactorialIterative(String value)
+	{
+		String factorialResponse = "\nThe factorial of " + value + " using iteration is: ";
+		mathTimer.startTimer();
+		if(isValid(value))
+		{
+			factorialResponse += mathTool.calculateFactIterative(Integer.parseInt(value));
 		}
 		mathTimer.stopTimer();
 		factorialResponse += "\n" + mathTimer.toString();
@@ -42,6 +57,20 @@ public class RecursionController
 	public String transferFibonacci(String value)
 	{
 		String fibResponse = "The fibonacci number of " + value + " is: ";
+		mathTimer.startTimer();
+		if(isValidFib(value))
+		{
+			fibResponse += mathTool.calculateFibonacci(Integer.parseInt(value));
+		}
+		mathTimer.stopTimer();
+		fibResponse += "\n" + mathTimer.toString();
+		mathTimer.resetTimer();
+		return fibResponse;
+	}
+	
+	public String transferFibonacciIterative(String value)
+	{
+		String fibResponse = "\nThe fibonacci number of " + value + " using iteration is: ";
 		mathTimer.startTimer();
 		if(isValidFib(value))
 		{
