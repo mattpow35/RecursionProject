@@ -84,7 +84,7 @@ public class RecursionPanel extends JPanel
 		{
 			public void actionPerformed(ActionEvent click)
 			{
-				output.setText(baseController.transferFibonacci(input.getText()) + baseController.transferFactorialIterative(input.getText()));
+				output.setText(baseController.transferFibonacci(input.getText()) + baseController.transferFibonacciIterative(input.getText()));
 			}
 		});
 	}

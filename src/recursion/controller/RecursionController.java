@@ -74,7 +74,7 @@ public class RecursionController
 		mathTimer.startTimer();
 		if(isValidFib(value))
 		{
-			fibResponse += mathTool.calculateFibonacci(Integer.parseInt(value));
+			fibResponse += mathTool.calculateFibIterative(Integer.parseInt(value));
 		}
 		mathTimer.stopTimer();
 		fibResponse += "\n" + mathTimer.toString();
